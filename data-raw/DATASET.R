@@ -49,5 +49,4 @@ PGA_Tour_2021_Stats <- PGA_Tour_2021_Stats %>%
   mutate(Sub_Category = str_replace(Sub_Category, "sg:", "stroke gain:")) %>% 
   arrange(Player_Name, Category)
 
-
 usethis::use_data(PGA_Tour_2021_Stats, overwrite = TRUE)
